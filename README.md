@@ -1,37 +1,28 @@
-# UTS PPLoS – Sistem Kepegawaian & Absensi
+# UTS Pengembangan Perangkat Lunak Berbasis Layanan (A)
 **Nama:** Raden Mas Said Baariq
-**NIM:** 2410511057
-**Kelas:** A
+**NIM:** 2210511057 (Studi Kasus 7: Kepegawaian & Absensi)
 
 ---
 
-## 📌 Deskripsi Singkat
-Sistem Kepegawaian & Absensi berbasis arsitektur service-oriented.  
-Fitur utama:
-- Manajemen pegawai (CRUD).
-- Absensi (clock-in / clock-out).
-- Pengajuan cuti dengan approval.
-- Rekap kehadiran bulanan.
-- Autentikasi JWT + GitHub OAuth.
+## 🔗 Link Penting
+- **Demo Video (YouTube):** https://youtu.be/FcybzOmB-tA
+- **Repository:** https://github.com/SeoHacka/uts-pplos-a-057
 
 ---
 
-## 🏗️ Arsitektur
-- **Auth Service** → JWT + GitHub OAuth.  
-- **Employee Service (PHP MVC)** → Laravel/CodeIgniter + MySQL (≥4 tabel).  
-- **Attendance Service (Node.js)** → Clock-in/out, laporan bulanan.  
-- **API Gateway (Node.js)** → Routing, JWT validation, rate limiting.  
+## 🏗️ Arsitektur Sistem
+Sistem ini menggunakan **Service-Oriented Architecture (SOA)** yang terdiri dari:
+1. **API Gateway (Node.js):** Port 3000 - Entry point tunggal untuk konsolidasi service.
+2. **Auth Service (Node.js):** Port 4000 - Menangani JWT Login & OAuth GitHub.
+3. **Employee Service (Laravel 11):** Port 8000 - CRUD Pegawai dengan Pagination & Filtering.
+4. **Attendance Service (Node.js):** Port 5000 - Pencatatan kehadiran real-time.
 
-Diagram arsitektur: lihat `docs/arsitektur.png`.
+## 🛠️ Cara Menjalankan Project
+1. Clone repository ini.
+2. Jalankan `npm install` di folder gateway, auth, dan attendance.
+3. Jalankan `composer install` & `php artisan migrate` di folder employee-service.
+4. Jalankan masing-masing service di terminal terpisah.
 
----
-
-## 🚀 Cara Menjalankan
-1. Clone repo:
-   ```bash
-   git clone https://github.com/<SeoHacka>/uts-pplos-a-057.git
-   cd uts-pplos-a-057
-2. Jalankan dengan Docker Compose:
-   ```bash
-   docker-compose up --build
-4. Akses API melalui Gateway (port 3000).
+## 📂 Dokumentasi
+- Screenshot Postman tersedia di folder `/postman`.
+- Diagram arsitektur tersedia di folder `/docs`.

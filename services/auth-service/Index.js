@@ -62,8 +62,8 @@ app.post('/logout', (req, res) => {
 });
 
 // --- GitHub OAuth ---
-const CLIENT_ID = 'your_github_client_id';
-const CLIENT_SECRET = 'your_github_client_secret';
+const CLIENT_ID = 'Ov23liz5eXwh34sL3ic9';
+const CLIENT_SECRET = '2b2f06a3ee8fa09cfb9df7406c075ee207b07e1f';
 const REDIRECT_URI = 'http://localhost:4000/oauth/callback';
 
 app.get('/oauth/login', (req, res) => {
