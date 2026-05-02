@@ -32,5 +32,6 @@ Diagram arsitektur: lihat `docs/arsitektur.png`.
    git clone https://github.com/<SeoHacka>/uts-pplos-a-057.git
    cd uts-pplos-a-057
 2. Jalankan dengan Docker Compose:
+   '''bash
    docker-compose up --build
-3. Akses API melalui Gateway (port 3000).
+4. Akses API melalui Gateway (port 3000).
