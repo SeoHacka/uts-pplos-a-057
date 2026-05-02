@@ -1,7 +1,7 @@
 # UTS PPLoS – Sistem Kepegawaian & Absensi
-**Nama:** Raden  
-**NIM:** 2110511057  
-**Kelas:** A  
+**Nama:** Raden Mas Said Baariq
+**NIM:** 2410511057
+**Kelas:** A
 
 ---
 
@@ -29,5 +29,5 @@ Diagram arsitektur: lihat `docs/arsitektur.png`.
 ## 🚀 Cara Menjalankan
 1. Clone repo:
    ```bash
-   git clone https://github.com/<username>/uts-pplos-a-057.git
+   git clone https://github.com/<SeoHacka>/uts-pplos-a-057.git
    cd uts-pplos-a-057
